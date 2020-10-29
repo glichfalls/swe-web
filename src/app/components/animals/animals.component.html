@@ -1,0 +1,13 @@
+<div>
+
+  <select [(ngModel)]="selection" class="form-control">
+    <option *ngFor="let type of types">{{type}}</option>
+  </select>
+
+  <br />
+
+  <ul>
+    <li *ngFor="let animal of (animals | filter: selection);">{{animal.name}}</li>
+  </ul>
+
+</div>

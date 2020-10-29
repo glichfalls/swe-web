@@ -1,0 +1,18 @@
+<main class="d-flex align-items-center justify-content-center">
+
+  <router-outlet></router-outlet>
+
+  <div class="container">
+
+    <h2>Form</h2>
+
+    <p>{{title}}</p>
+
+    <form-test (textEvent)="setTitle($event)"></form-test>
+
+  </div>
+
+  <a routerLink="/animal">Animal</a><br />
+  <a routerLink="/jokes">Jokes</a>
+
+</main>
